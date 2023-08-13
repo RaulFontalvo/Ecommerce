@@ -11,3 +11,12 @@ function changeHeadingColor() {
     const currentColor = window.getComputedStyle(mainHeading).color;
     mainHeading.style.color = currentColor === 'rgb(255, 255, 255)' ? '#333' : '#fff';
 }
+
+// Función para agregar un producto a la lista de productos
+function addProduct() {
+    const productList = document.getElementById('products-list');
+    const newProduct = document.createElement('div');
+    newProduct.classList.add('product-item');
+    newProduct.textContent = 'Nuevo Producto';
+    productList.appendChild(newProduct);
+}
