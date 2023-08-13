@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artículos Deportivos</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header style="background-color: lightgray; text-align: center; padding: 10px;">
-        <h1>Artículos Deportivos</h1>
+    <header>
+        <h1 id="main-heading">Artículos Deportivos</h1>
         <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin: 0 15px;"><a href="#">Inicio</a></li>
-                <li style="margin: 0 15px;"><a href="#">Productos</a></li>
-                <li style="margin: 0 15px;"><a href="#">Contacto</a></li>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main style="text-align: center; margin-top: 20px;">
-        <button style="background-color: lightblue; padding: 5px 10px; margin: 5px;">Cambiar Fondo</button>
-        <button style="background-color: lightgreen; padding: 5px 10px; margin: 5px;">Cambiar Color de Encabezado</button>
-        <button style="background-color: lightpink; padding: 5px 10px; margin: 5px;">Agregar Producto</button>
-        <div id="products-list" style="border: 1px solid lightgray; padding: 10px; margin-top: 20px;">
+    <main>
+        <button onclick="changeBackgroundColor()">Cambiar Fondo</button>
+        <button onclick="changeHeadingColor()">Cambiar Color de Encabezado</button>
+        <button onclick="addProduct()">Agregar Producto</button>
+        <div id="products-list">
             <!-- Aquí se mostrarían los productos -->
         </div>
     </main>
 
-    <footer style="text-align: center; background-color: lightgray; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+    <footer>
         <p>Todos los derechos reservados &copy; 2023</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
