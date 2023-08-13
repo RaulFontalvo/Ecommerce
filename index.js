@@ -9,7 +9,7 @@ function changeBackgroundColor() {
 function changeHeadingColor() {
     const mainHeading = document.getElementById('main-heading');
     const currentColor = window.getComputedStyle(mainHeading).color;
-    mainHeading.style.color = currentColor === 'rgb(255, 255, 255)' ? '#333' : '#fff';
+    mainHeading.style.color = currentColor === 'rgb(255, 255, 255)' ? '#f0f' : '#fff';
 }
 
 // Función para agregar un producto a la lista de productos
