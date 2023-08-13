@@ -6,7 +6,7 @@ function cambiarfondo() {
 }
 
 // Función para cambiar el color del encabezado
-function changeHeadingColor() {
+function cambiarcolorencabezado() {
     const mainHeading = document.getElementById('main-heading');
     const currentColor = window.getComputedStyle(mainHeading).color;
     mainHeading.style.color = currentColor === 'rgb(255, 255, 255)' ? '#f0f' : '#fff';
