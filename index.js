@@ -13,7 +13,7 @@ function cambiarcolorencabezado() {
 }
 
 // Función para agregar un producto a la lista de productos
-function addProduct() {
+function agregarproducto() {
     const productList = document.getElementById('products-list');
     const newProduct = document.createElement('div');
     newProduct.classList.add('product-item');
